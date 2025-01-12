@@ -1,0 +1,25 @@
+# Ignore the target directory
+/target/
+
+# Ignore build artifacts
+**/*.rs.bk
+**/*.rs.swp
+**/*.rs.swo
+
+# Ignore Cargo.lock (if you're building a library)
+Cargo.lock
+
+# Ignore the node_modules directory (if using Node.js)
+node_modules/
+
+# Ignore the .env file (if using environment variables)
+.env
+
+# Ignore IDE and editor specific files
+.idea/
+.vscode/
+*.iml
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
