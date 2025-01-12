@@ -80,3 +80,15 @@ Generated Password: x<1PY@9>7B~%h0$
 
 7. **Unit Tests**:
    - Write unit tests to ensure the correctness of the password generation logic.
+
+### **How to Run**
+
+To format, lint, run, and generate documentation for the project, use the following commands:
+
+```bash
+cargo fmt
+rustup component add clippy
+cargo clippy
+cargo run --quiet --release
+cargo doc --open
+```

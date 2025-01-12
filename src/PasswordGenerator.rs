@@ -11,25 +11,35 @@ fn main() {
     // Ask the user for the desired password length
     println!("Enter the desired password length:");
     let mut input = String::new();
-    io::stdin().read_line(&mut input).expect("Failed to read line");
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
     let password_length: usize = input.trim().parse().expect("Please enter a valid number");
 
     // Ask the user for character set preferences
     println!("Include lowercase letters? (y/n):");
     let mut include_lowercase = String::new();
-    io::stdin().read_line(&mut include_lowercase).expect("Failed to read line");
+    io::stdin()
+        .read_line(&mut include_lowercase)
+        .expect("Failed to read line");
 
     println!("Include uppercase letters? (y/n):");
     let mut include_uppercase = String::new();
-    io::stdin().read_line(&mut include_uppercase).expect("Failed to read line");
+    io::stdin()
+        .read_line(&mut include_uppercase)
+        .expect("Failed to read line");
 
     println!("Include digits? (y/n):");
     let mut include_digits = String::new();
-    io::stdin().read_line(&mut include_digits).expect("Failed to read line");
+    io::stdin()
+        .read_line(&mut include_digits)
+        .expect("Failed to read line");
 
     println!("Include special characters? (y/n):");
     let mut include_special = String::new();
-    io::stdin().read_line(&mut include_special).expect("Failed to read line");
+    io::stdin()
+        .read_line(&mut include_special)
+        .expect("Failed to read line");
 
     // Define character sets based on user preferences
     let mut charset = String::new();
